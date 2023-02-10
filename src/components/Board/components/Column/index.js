@@ -1,3 +1,4 @@
+import { css } from '@emotion/css'
 import { forwardRef } from 'react'
 import { Draggable } from 'react-beautiful-dnd'
 import Card from './components/Card'
@@ -37,7 +38,17 @@ function Column({
               verticalAlign: 'top',
               ...columnProvided.draggableProps.style,
             }}
-            className='react-kanban-column'
+            className={css`
+            padding: 15px;
+            border-radius: 2px;
+            background-color: red;
+            margin: 5px;
+            input {
+              &:focus {
+                outline: none;
+              }
+            }
+            `}
             data-testid={`column-${children.id}`}
           >
             <div {...columnProvided.dragHandleProps}>{renderColumnHeader(children)}</div>
