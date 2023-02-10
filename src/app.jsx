@@ -1,7 +1,6 @@
 import { render } from 'react-dom'
-import Board from '../src'
-import getUrlParams from './services/getUrlParams'
-import '../src/styles.scss'
+import Board from '.'
+import './styles.scss'
 
 const board = {
   columns: [
@@ -67,7 +66,6 @@ const board = {
 
 render(
   <Board
-    {...getUrlParams()}
     onColumnRemove={console.log}
     onColumnRename={console.log}
     onCardRemove={console.log}

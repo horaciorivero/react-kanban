@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { when } from '@services/utils'
+import { when } from '../../../../../../../../services/utils'
 
 function CardForm({ onConfirm, onCancel }) {
   const inputCardTitle = useRef()

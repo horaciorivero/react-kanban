@@ -3,7 +3,7 @@ import {
   addInArrayAtPosition,
   changeElementOfPositionInArray,
   replaceElementOfArray,
-} from '@services/utils'
+} from '../services/utils'
 
 function reorderCardsOnColumn(column, reorderCards) {
   return { ...column, cards: reorderCards(column.cards) }

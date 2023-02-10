@@ -3,7 +3,7 @@ import { DragDropContext } from 'react-beautiful-dnd'
 import Column from './components/Column'
 import ColumnAdder from './components/ColumnAdder'
 import withDroppable from '../withDroppable'
-import { when, partialRight } from '@services/utils'
+import { when, partialRight } from '../../services/utils'
 import DefaultColumnHeader from './components/DefaultColumnHeader'
 import DefaultCard from './components/DefaultCard'
 import {
@@ -13,7 +13,7 @@ import {
   isMovingAColumnToAnotherPosition,
   isMovingACardToAnotherPosition,
 } from './services'
-import { moveCard, moveColumn, addColumn, removeColumn, changeColumn, addCard, removeCard } from '@services/helpers'
+import { moveCard, moveColumn, addColumn, removeColumn, changeColumn, addCard, removeCard } from '../../services/helpers'
 
 const Columns = forwardRef((props, ref) => <div ref={ref} style={{ whiteSpace: 'nowrap' }} {...props} />)
 

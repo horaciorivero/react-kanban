@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
+    "target": "ESNext",
+    "module": "ESNext",
     "allowJs": true,
-    "moduleResolution": "node",
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
       "@services/*": ["src/services/*"]
     }
-  },
-  "include": ["src/**/*"]
+  }
 }
